@@ -7,6 +7,7 @@
     --additional-contact-color: rgba(255, 255, 255, 0.6);
     --bcg-footer-color: #2F303A;
     --bcg-secondary-color: #F5F4FA;
+    --bcg-hero-color: #C4C4C4;
     --border-color: #EEEEEE;
     --border-header-color: #ECECEC;
 }
@@ -126,6 +127,7 @@ img {
 .header-contacts {
     display: flex;
     margin-left: auto;
+    align-items: center;
 }
 
 .header-contacts .item:not(:last-child) {
@@ -133,9 +135,9 @@ img {
 }
 
 .header-contacts .link {
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    display: flex;
+    align-items: center;
+    padding: 32px 0;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -149,12 +151,51 @@ img {
     color: var(--accent-color);
 }
 
+.icon-envelope {
+    margin-right: 10px;
+    width: 16px;
+    height: 12px;
+    fill: var(--primary-text-color);
+}
+
+.header-contacts .link:hover .icon-envelope,
+.header-contacts .link:focus .icon-envelope {
+    fill: var(--accent-color);
+}
+
+.icon-smartphone {
+    margin-right: 10px;
+    width: 10px;
+    height: 16px;
+    fill: var(--primary-text-color);
+}
+
+.header-contacts .link:hover .icon-smartphone,
+.header-contacts .link:focus .icon-smartphone {
+    fill: var(--accent-color);
+}
+
 /* Hero */
 
-.hero {
-    padding: 200px 0;
-    background-color: var(--bcg-footer-color);
+.hero { 
+    background-color: var(--bcg-hero-color);
     text-align: center;
+}
+
+.overlay {
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 200px 0;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+    url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .hero-title {
