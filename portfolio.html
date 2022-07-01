@@ -23,8 +23,22 @@
                 </ul>
             </nav>
             <ul class="header-contacts list">
-                <li class="item"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-                <li class="item"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+                <li class="item">
+                    <a href="mailto:info@devstudio.com" class="link">
+                        <svg class="icon" width="16px" height="12px">
+                            <use href="./images/icons.svg#icon-envelope"></use>
+                        </svg>
+                        info@devstudio.com
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="tel:+380961111111" class="link">
+                        <svg class="icon" width="10px" height="16px">
+                            <use href="./images/icons.svg#icon-smartphone"></use>
+                        </svg>
+                        +38 096 111 11 11
+                    </a>
+                </li>
             </ul>
         </div>
     </header>
@@ -41,7 +55,7 @@
                 </ul>
                 <ul class="works list">               
                         <li class="item">
-                            <a href="#">
+                            <a href="#" class="link">
                                 <img src="./images/work1.jpg" alt="Экран ноутбука с сайтом" width="370">
                                 <div class="works-cards">
                                     <h2 class="title">Технокряк</h2>
@@ -50,7 +64,7 @@
                             </a>
                         </li>
                         <li class="item">
-                        <a href="#">
+                        <a href="#" class="link">
                             <img src="./images/work2.jpg" alt="Два баскетболиста" width="370">
                             <div class="works-cards">
                                 <h2 class="title">Постер New Orlean vs Golden Star</h2>
@@ -59,7 +73,7 @@
                         </a>
                     </li>
                     <li class="item">
-                        <a href="#">
+                        <a href="#" class="link">
                             <img src="./images/work3.jpg" alt="Лого ресторана морепродуктов" width="370">
                             <div class="works-cards">
                                 <h2 class="title">Ресторан Seafood</h2>
@@ -68,7 +82,7 @@
                         </a>
                     </li>
                     <li class="item">
-                        <a href="#">
+                        <a href="#" class="link">
                             <img src="./images/work4.jpg" alt="Наушники" width="370">
                             <div class="works-cards">
                                 <h2 class="title">Проект Prime</h2>
@@ -77,7 +91,7 @@
                         </a>
                     </li>
                     <li class="item">
-                        <a href="#">
+                        <a href="#" class="link">
                             <img src="./images/work5.jpg" alt="Две коробочки" width="370">
                             <div class="works-cards">
                                 <h2 class="title">Проект Boxes</h2>
@@ -86,7 +100,7 @@
                         </a>
                     </li>
                     <li class="item">
-                        <a href="#">
+                        <a href="#" class="link">
                             <img src="./images/work6.jpg" alt="Моноблок" width="370">
                             <div class="works-cards">
                                 <h2 class="title">Inspiration has no Borders</h2>
@@ -95,7 +109,7 @@
                         </a>
                     </li>
                     <li class="item">
-                        <a href="#">
+                        <a href="#" class="link">
                             <img src="./images/work7.jpg" alt="Журнал" width="370">
                             <div class="works-cards">
                                 <h2 class="title">Издание Limited Edition</h2>
@@ -104,7 +118,7 @@
                         </a>
                     </li>
                     <li class="item">
-                        <a href="#">
+                        <a href="#" class="link">
                             <img src="./images/work8.jpg" alt="Бирка" width="370">
                             <div class="works-cards">
                                 <h2 class="title">Проект LAB</h2>
@@ -113,7 +127,7 @@
                         </a>
                     </li>
                     <li class="item">
-                        <a href="#">
+                        <a href="#" class="link">
                             <img src="./images/work9.jpg" alt="Работа за ноутбуком" width="370">
                             <div class="works-cards">
                                 <h2 class="title">Growing Business</h2>
@@ -127,15 +141,51 @@
     </main>       
     <footer class="page-footer">
         <div class="container">
-            <a href="./index.html" class="footer-logo name"><span class="logo-accent">Web</span>Studio</a>
-            <address>
-                <ul class="footer-contacts list">
-                    <li class="item"><a href="https://goo.gl/maps/piqngm7oDQpEDh6u6" target="_blank"
-                            rel="noopener nofollow noreferrer" class="address-info">г. Киев, пр-т Леси Украинки, 26</a></li>
-                    <li class="item"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    <li class="item"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <div class="address-wrapper">
+                <a href="./index.html" class="footer-logo name"><span class="logo-accent">Web</span>Studio</a>
+                <address>
+                    <ul class="footer-contacts list">
+                        <li class="item"><a href="https://goo.gl/maps/piqngm7oDQpEDh6u6" target="_blank"
+                                rel="noopener nofollow noreferrer" class="address-info">г. Киев, пр-т Леси Украинки, 26</a>
+                        </li>
+                        <li class="item"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li class="item"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+                    </ul>
+                </address>
+            </div>
+            <div>
+                <b class="cta">присоединяйтесь</b>
+                <ul class="footer-links list">
+                    <li class="social-links-item">
+                        <a href="#" class="link">
+                            <svg class="icon" width="20px" height="20px">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-links-item">
+                        <a href="#" class="link">
+                            <svg class="icon" width="20px" height="20px">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-links-item">
+                        <a href="#" class="link">
+                            <svg class="icon" width="20px" height="20px">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-links-item">
+                        <a href="#" class="link">
+                            <svg class="icon" width="20px" height="20px">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
                 </ul>
-            </address>
+            </div>
         </div>
     </footer>
 </body>
