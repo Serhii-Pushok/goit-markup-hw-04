@@ -376,26 +376,30 @@ background-color: var(--bcg-secondary-color);
 }
 
 .social-links-item {
+    border-radius: 50%;
+}
+
+.social-links-item .link {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
     width: 44px;
     height: 44px;
 }
 
-.social-links-item:hover,
-.social-links-item:focus {
-    background-color: var(--accent-color);  
-    cursor: pointer;
+.social-links-item .link:hover,
+.social-links-item .link:focus {
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    fill: var(--white-color); 
 }
 
 .team-cards .icon {
     fill: var(--social-links-color);
 }
 
-.social-links-item:hover .icon,
-.social-links-item:focus .icon {
+.social-links-item .link:hover .icon,
+.social-links-item .link:focus .icon {
     fill: var(--white-color);
 }
 
